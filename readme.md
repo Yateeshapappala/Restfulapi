@@ -18,20 +18,20 @@ It includes **CRUD operations**, **JWT authentication**, and a **To-Do List API*
 ### **1️⃣ Clone the Repository**
 ```sh
 git clone <repository-link>
-cd backend-api
+cd restfulapi
 ```
 
 ### **2️⃣ Install Dependencies**
 ```sh
-cd task1-basic-crud
+cd task1
 npm install
 
-cd ../task2-to-4-todo-api
+cd ../to-do
 npm install
 ```
 
 ### **3️⃣ Set Up Environment Variables**
-Create a `.env` file inside `task2-to-4-todo-api/` and add:
+Create a `.env` file inside `todo/` and add:
 ```
 MONGO_URI=mongodb+srv://your_username:your_password@your-cluster.mongodb.net/todoDB?retryWrites=true&w=majority
 JWT_SECRET=your_secret_key
@@ -41,14 +41,14 @@ PORT=5000
 ### **4️⃣ Run the Servers**
 #### ✅ **Start Task 1 API (Basic CRUD)**
 ```sh
-cd task1-basic-crud
+cd task1
 node index.js
 ```
 Server runs at: **`http://localhost:4000`**
 
 #### ✅ **Start Task 2-4 API (To-Do + Users + Auth)**
 ```sh
-cd task2-to-4-todo-api
+cd to-do
 npm run dev
 ```
 Server runs at: **`http://localhost:5000`**
